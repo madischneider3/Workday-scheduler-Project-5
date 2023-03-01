@@ -9,8 +9,8 @@ $(function () {
    
     $(".saveBtn").on("click", function () {
       let currentBlock = $(this).parent().attr("id");
-      let eventText = $(this).siblings("textarea").val();
-      localStorage.setItem(currentBlock, eventText);
+      let userText = $(this).siblings("textarea").val();
+      localStorage.setItem(currentBlock, userText);
     });
     //click based event listen that saves text input within the text areas of the calendar
   
